@@ -4,7 +4,7 @@ title: "Louise and Patrick's Wedding Website"
 published: true
 ---
 
-#Welcome to our spiffy Wedding Website#
+##Welcome to our spiffy Wedding Website#
 
 Massively under construction!
     
