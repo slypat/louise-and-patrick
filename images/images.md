@@ -3,6 +3,4 @@ layout: default
 title: An Image
 ---
 
-<div>
-    <p>Images.html</p>
-</div>
+Images.html
