@@ -2,4 +2,3 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
 exclude: [README.md, CNAME]
-baseurl: /louise-and-patrick
