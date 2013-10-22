@@ -7,5 +7,7 @@ published: true
 ##Welcome to our spiffy Wedding Website#
 
 Massively under construction!
+
+(bump for CI)
     
 This is just test - [a link]({{ site.baseurl }}images/images.html)
