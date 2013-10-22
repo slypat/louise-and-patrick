@@ -1,3 +1,4 @@
 language: ruby
 script: "bundle exec jekyll build"
-exclude: ["vendor"]
+rvm:
+  - 1.9.3
