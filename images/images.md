@@ -1,6 +1,6 @@
 ---
 layout: default
-title: An Image
+title: "An image"
 ---
 
-Images.html
+An image
