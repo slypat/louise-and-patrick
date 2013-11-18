@@ -34,110 +34,223 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 			  <ul class="nav navbar-nav">
-			    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			    <li><a href="#">Directions and Details</a></li>
-			    <li><a href="#">Accommodation</a></li>
-			    <li><a href="#">Restaurants Nearby</a></li>
+			    <li class="active"><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#venue-info">Venue Information</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#accommodation">Accommodation &amp; Local Info</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">Children</a></li>
+			    
 			  </ul>
 			</div><!-- /.navbar-collapse -->
 		</div>
 	</nav>
     <!------------------------- End Navbar ------------------------------>
     
-    <!------------------------- Carousel -------------------------------->
-    <div id="headerCarousel" class="carousel slide" data-ride="carousel">
-        
-        <!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#headerCarousel" data-slide-to="1"></li>
-			<li data-target="#headerCarousel" data-slide-to="2"></li>
-		</ol>
-		
-		<!-- Carousel slides -->
-		<div class="carousel-inner">
+    <!-- Full Page Image Header Area -->
+    <div id="home" class="header">
+      <div class="vert-text">
+        <h1>Louise &amp; Patrick</h1>
+        <p class="lead">Saturday 29th March 2014</p>
+<!--         <a href="#about" class="btn btn-default btn-lg">Find Out More</a> -->
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+    
+    <!-- Venue Information -->
+    <div id="venue-info">
+      <div class="container text-center">
+        <h2>Venue &amp; Church Information</h2>
+      </div>
+    </div>
+
+    <div class="container marketing">
+        <!-- Prestwold Hall -->
+	    <div class="featurette pat_top-margin">
+	       <!-- TODO: proper credit -->
+	        <img class="featurette-image pull-right" src="{{ site.baseurl }}images/prestwold-hall.jpg" alt="Prestwold Hall">
+	        <h2 class="featurette-heading">Prestwold Hall<br /><span class="text-muted">5.30pm</span></h2>
+	        <p class="lead">Please join us for drinks, supper and dancing. Speeches are at 6.00pm so please be prompt.</p>
+	    </div>
+	    
+	    <!-- Details -->
+        <div class="details">
+            <div class="row">
             
-            <div class="item active">
-                <img src="{{ site.baseurl }}images/droid.jpg" alt="Droid Cake" />
-		        <div class="container">
-		            <div class="carousel-caption">
-		                <h1>Example headline.</h1>
-		                <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-		                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-		            </div>
-		        </div>
-		    </div>
-		    
-            <div class="item">
-                <img src="{{ site.baseurl }}images/nizlopi.jpg" alt="Nizlopi" />
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <div class="col-md-3 text-center">
+                    <div class="detail-item">
+                        <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
+                        <h2>Address</h2>
+	                    <address>
+	                        <strong>Prestwold Hall</strong><br />
+	                        Prestwold<br />
+	                        Loughborough<br />
+	                        LE12 5SQ<br />
+	                        <abbr title="Telephone">T:</abbr> +44 (0)1509 880236<br />
+	                        <abbr title="Website">W:</abbr> <a href="http://www.prestwold-hall.com/" target="_blank">www.prestwold-hall.com</a>
+	                    </address>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 text-center">
+                    <div class="detail-item">
+                        <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
+                        <h2>Parking</h2>
+		                <p>There is ample parking at Prestwold Hall and you are welcome to leave your car in the car park overnight. Please collect it by 11.30am the
+		                following day.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 text-center">
+                    <div class="detail-item">
+                        <div class="detail-icon"><span class="glyphicon glyphicon-user"></span></div>
+                        <h2>Dresscode</h2>
+                        <p>Morning dress optional.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 text-center">
+                    <div class="detail-item">
+                        <div class="detail-icon"><span class="glyphicon glyphicon-time"></span></div>
+                        <h2>Carriages</h2>
+                        <p>At midnight.</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="item">
-                <img src="{{ site.baseurl }}images/tilly.jpg" alt="Tilly" />
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
-        
+        </div>
+        <!-- /Details -->
+	    
+	    <hr />
+	    
+	    <!-- St. Margret Clitherow's -->
+	    <div class="featurette">
+            <img class="featurette-image pull-left" src="{{ site.baseurl }}images/st-margarets-collage.png" alt="Prestwold Hall">
+            <h2 class="featurette-heading text-right">St. Margaret Clitherow's<br /><span class="text-muted">11.30am</span></h2>
+            <p class="lead text-right">The wedding ceremony will be held at 11.30am at St. Margaret Clitherow's Catholic Church. We would be delighted 
+            if you would like to share this part of our day.</p>
         </div>
         
-        <!-- Controls -->
-        <a class="left carousel-control" href="#headerCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#headerCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        <div class="details">
+            <div class="row">
+            
+                <div class="col-md-3 col-md-offset-3 text-center">
+                    <div class="detail-item">
+                        <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
+                        <h2>Address</h2>
+		                <address>
+		                    <strong>St. Margaret Clitherow's Catholic Church</strong><br />
+		                    Willow Brook<br />
+		                    Keyworth<br />
+		                    NG12 5BB<br />
+		                    <abbr title="Website">W:</abbr> <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">www.eastleakeandkeyworthrcp.co.uk</a>
+		                </address>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 text-center">
+                    <div class="detail-item">
+                        <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
+                        <h2>Parking</h2>
+                        <p>There is a car park round the back of the church as well as on-road parking along Willow Brook and Selby Lane</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
     </div>
-    <!------------------------- End Carousel ----------------------------->
-  
-    <div class="container">
-    
-        <h1>Welcome to our spiffy website</h1>
-    
-        {{ content }}
-    
+
+    <!-- Callout -->
+    <div id="rsvp" class="callout">
+        <div class="vert-text">
+            <h1><a href="mailto:rsvp@louiseandpatrick.com">rsvp@louiseandpatrick.com</a></h1>
+        </div>
     </div>
+    <!-- /Callout -->
+    
+    <!-- Intro -->
+    <div class="rsvp-info">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>Please RSVP by 5th January 2014</h2>
+                    <p class="lead">Send us an email to let us know if you can or can't make it, and if you have any specific dietary 
+                    requirements as a buffet will be provided.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Intro -->
+    
+    <!-- Accommodation and local info -->
+    <div id="accommodation" class="container">
+        <h2 class="text-center">Local Information</h2>
+        
+        <h3>Accommodation</h3>
+        <p>There is a wide selection of hotels within a 15-mile radius, many of which have special rates for guests of 
+        Prestwold Hall - please book directly with the individual hotels. Below are a few suggestions but if you would like a more complete list <a href="mailto:info@louiseandpatrick.com">send us an email</a>.</p>
+        
+        <ul>
+            <li><strong>Travelodge Loughborough Central Hotel</strong> Bridge Street, Loughborough, LE11 1NQ</li>
+            <li><strong>Ramada Loughborough Hotel</strong> The High Street, Loughborough, LE11 2QL</li>
+            <li><strong>Guesthouse at Rempstone</strong> Main Street, Rempstone, Loughborough, LE12 6RH</li>
+            <li><strong>The Hunting Lodge</strong> 38 South Street, Barrow Upon Soar, Loughborough, LE12 8LZ</li>
+            <li><strong>Number 88</strong> 88 Leicester Road, Loughborough, LE11 2AQ</li>
+            <li><strong>Imago at Burleigh Court</strong> Loughborough University, Loughborough, LE11 3RZ</li>
+            <li><strong>Imago at Link Hotel</strong> New Ashby Road, Loughborough, LE11 4EX</li>
+            <li><strong>Holiday Inn</strong> 129 St. nicholas Circle, Leicester, LE1 5LX</li>
+            <li><strong>Nottingham South Premier Inn</strong> Loughborough Road, Nottingham, NG11 6LS</li>
+        </ul>
+        
+        <h3>Places to Eat</h3>
+        <p>There will be a buffet provided for all of our guests in the evening but if you are looking for somewhere to eat during the day
+        there are plenty of options in Loughborough town centre.</p>
+        
+        <h3>Taxis</h3>
+        <ul>
+            <li><strong>Loughborough Taxis</strong> <abbr title="Telephone">T:</abbr> 01509 230230</li>
+            <li><strong>ACE/ABC</strong> <abbr title="Telephone">T:</abbr> 0800 281004 / 01509 215656</li>
+        </ul>
+        
+    </div>
+    <!-- /Accommodation and local info -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ site.baseurl }}bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top - 50 // 50 is navbar offset
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bootstrap 101 Template - {{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    Bootstrap
-    <link href="{{ site.baseurl }}css/bootstrap.min.css" rel="stylesheet" media="screen">
-
-    HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
-    [if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]
-  </head>
-  <body>
-  
-    {% include header.html %}
-        
-    {{ content }}
-
-    {% include footer.html %}
-
-    jQuery (necessary for Bootstrap's JavaScript plugins)
-    <script src="//code.jquery.com/jquery.js"></script>
-    Include all compiled plugins (below), or include individual files as needed
-    <script src="{{ site.baseurl }}js/bootstrap.min.js"></script>
-  </body>
-</html> -->
