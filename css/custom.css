@@ -79,6 +79,22 @@ body {
 /* Featurettes
 ------------------------- */
 
+.venue {
+    padding-top: 150px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+
+.venue-image {
+    margin-top: -150px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+.venue-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -154,8 +170,22 @@ body {
 	color: #ffffff;
 }
 
-#accommodation {
-	padding: 50px, 0;
+/* Local Info */
+
+.localinfo {
+    padding: 50px 0;
+}
+
+.local-info-details {
+    padding: 50px 0;
+}
+
+.localinfo-item {
+  margin-bottom: 25px;
+}
+
+.img-localinfo {
+  margin: 0 auto;
 }
 
 /* Responsive */

@@ -37,7 +37,7 @@
 			    <li class="active"><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="#venue-info">Venue Information</a></li>
                 <li><a href="#rsvp">RSVP</a></li>
-                <li><a href="#accommodation">Accommodation &amp; Local Info</a></li>
+                <li><a href="#localinfo">Local Information</a></li>
                 <li><a href="#">Gifts</a></li>
                 <li><a href="#">Children</a></li>
 			    
@@ -66,12 +66,23 @@
 
     <div class="container marketing">
         <!-- Prestwold Hall -->
-	    <div class="featurette pat_top-margin">
-	       <!-- TODO: proper credit -->
-	        <img class="featurette-image pull-right" src="{{ site.baseurl }}images/prestwold-hall.jpg" alt="Prestwold Hall">
-	        <h2 class="featurette-heading">Prestwold Hall<br /><span class="text-muted">5.30pm</span></h2>
-	        <p class="lead">Please join us for drinks, supper and dancing. Speeches are at 6.00pm so please be prompt.</p>
-	    </div>
+	    <div class="pat_top-margin venue">
+	        <div class="row">
+	            
+	            <div class="col-md-6 col-md-push-6">
+                    <p class="text-right"><img class="venue-image" src="{{ site.baseurl }}images/prestwold-hall.jpg" alt="Prestwold Hall"></p>
+                    <p class="text-right"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/philmciver/" target="_blank">Phil 
+                    McIver</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a>, image has 
+                    been modified</small></em></p>
+                </div>
+                
+	            <div class="col-md-6 col-md-pull-6">
+	                <h2 class="venue-heading">Prestwold Hall<br /><span class="text-muted">5.30pm</span></h2>
+                    <p class="lead">Please join us for drinks, supper and dancing. Speeches are at 6.00pm so please be prompt.</p>
+	            </div>
+	            
+	        </div>
+        </div>
 	    
 	    <!-- Details -->
         <div class="details">
@@ -123,12 +134,28 @@
 	    <hr />
 	    
 	    <!-- St. Margret Clitherow's -->
-	    <div class="featurette">
+	    <div class="pat_top-margin venue">
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <p><img class="venue-image" src="{{ site.baseurl }}images/st-margarets-collage.png" alt="St. Margaret Clitherow's"></p>
+                    <p><em><small>Photos &copy; <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">East Leake And Keyworth Roman Catholic Parish</a></small></em></p>
+                </div>
+                
+                <div class="col-md-6">
+                    <h2 class="venue-heading text-right">St. Margaret Clitherow's<br /><span class="text-muted">11.30am</span></h2>
+                    <p class="lead text-right">The wedding ceremony will be held at 11.30am at St. Margaret Clitherow's Catholic Church. We would be delighted 
+                    if you would like to share this part of our day.</p>
+                </div>
+                
+            </div>
+        </div>
+	    <!-- <div class="featurette">
             <img class="featurette-image pull-left" src="{{ site.baseurl }}images/st-margarets-collage.png" alt="Prestwold Hall">
             <h2 class="featurette-heading text-right">St. Margaret Clitherow's<br /><span class="text-muted">11.30am</span></h2>
             <p class="lead text-right">The wedding ceremony will be held at 11.30am at St. Margaret Clitherow's Catholic Church. We would be delighted 
             if you would like to share this part of our day.</p>
-        </div>
+        </div> -->
         
         <div class="details">
             <div class="row">
@@ -182,38 +209,115 @@
     </div>
     <!-- /Intro -->
     
-    <!-- Accommodation and local info -->
-    <div id="accommodation" class="container">
+    <!-- Local info -->
+    <div id="localinfo" class="container localinfo">
         <h2 class="text-center">Local Information</h2>
         
-        <h3>Accommodation</h3>
-        <p>There is a wide selection of hotels within a 15-mile radius, many of which have special rates for guests of 
-        Prestwold Hall - please book directly with the individual hotels. Below are a few suggestions but if you would like a more complete list <a href="mailto:info@louiseandpatrick.com">send us an email</a>.</p>
-        
-        <ul>
-            <li><strong>Travelodge Loughborough Central Hotel</strong> Bridge Street, Loughborough, LE11 1NQ</li>
-            <li><strong>Ramada Loughborough Hotel</strong> The High Street, Loughborough, LE11 2QL</li>
-            <li><strong>Guesthouse at Rempstone</strong> Main Street, Rempstone, Loughborough, LE12 6RH</li>
-            <li><strong>The Hunting Lodge</strong> 38 South Street, Barrow Upon Soar, Loughborough, LE12 8LZ</li>
-            <li><strong>Number 88</strong> 88 Leicester Road, Loughborough, LE11 2AQ</li>
-            <li><strong>Imago at Burleigh Court</strong> Loughborough University, Loughborough, LE11 3RZ</li>
-            <li><strong>Imago at Link Hotel</strong> New Ashby Road, Loughborough, LE11 4EX</li>
-            <li><strong>Holiday Inn</strong> 129 St. nicholas Circle, Leicester, LE1 5LX</li>
-            <li><strong>Nottingham South Premier Inn</strong> Loughborough Road, Nottingham, NG11 6LS</li>
-        </ul>
-        
-        <h3>Places to Eat</h3>
-        <p>There will be a buffet provided for all of our guests in the evening but if you are looking for somewhere to eat during the day
-        there are plenty of options in Loughborough town centre.</p>
-        
-        <h3>Taxis</h3>
-        <ul>
-            <li><strong>Loughborough Taxis</strong> <abbr title="Telephone">T:</abbr> 01509 230230</li>
-            <li><strong>ACE/ABC</strong> <abbr title="Telephone">T:</abbr> 0800 281004 / 01509 215656</li>
-        </ul>
-        
+        <div class="row local-info-details">
+            <div class="col-md-4 text-center">
+                <div class="localinfo-item">
+                    <h4>Accommodation</h4>
+                    <p><a href="#"><img class="img-localinfo img-responsive" src="{{ site.baseurl }}images/hotel-room.jpg" data-toggle="modal" data-target="#accommodationModal" /></a></p>
+                    <p class="text-center"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/intercontinentalhongkong/" target="_blank">InterContinental 
+                    Hong Kong</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a></small></em></p>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="accommodationModal" tabindex="-1" role="dialog" aria-labelledby="accommodationModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="accommodationModalLabel">Accommodation</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>There is a wide selection of hotels within a 15-mile radius, many of which have special rates for guests of 
+                                    Prestwold Hall - please book directly with the individual hotels. Below are a few suggestions but if you would like a more complete list <a href="mailto:info@louiseandpatrick.com">send us an email</a>.</p>
+                                    
+                                    <ul class="text-left list-unstyled">
+                                        <li><strong>Travelodge Loughborough Central Hotel</strong> Bridge Street, Loughborough, LE11 1NQ</li>
+                                        <li><strong>Premier Inn</strong> Southfield Road, Loughborough, LE11 9SA</li>
+                                        <li><strong>Ramada Loughborough Hotel</strong> The High Street, Loughborough, LE11 2QL</li>
+                                        <li><strong>Guesthouse at Rempstone</strong> Main Street, Rempstone, Loughborough, LE12 6RH</li>
+                                        <li><strong>The Hunting Lodge</strong> 38 South Street, Barrow Upon Soar, Loughborough, LE12 8LZ</li>
+                                        <li><strong>Number 88</strong> 88 Leicester Road, Loughborough, LE11 2AQ</li>
+                                        <li><strong>Imago at Burleigh Court</strong> Loughborough University, Loughborough, LE11 3RZ</li>
+                                        <li><strong>Imago at Link Hotel</strong> New Ashby Road, Loughborough, LE11 4EX</li>
+                                        <li><strong>Holiday Inn</strong> 129 St. nicholas Circle, Leicester, LE1 5LX</li>
+                                        <li><strong>Nottingham South Premier Inn</strong> Loughborough Road, Nottingham, NG11 6LS</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="localinfo-item">
+                    <h4>Places To Eat</h4>
+                    <p><a href="#"><img class="img-localinfo img-responsive" src="{{ site.baseurl }}images/places-to-eat.jpg" data-toggle="modal" data-target="#placesToEatModal" /></a></p>
+                    <p class="text-center"><em><small>Photo courtesy of <a href="http://join.deathtothestockphoto.com/" target="_blank">Death 
+                    To The Stock Photo</a></small></em></p>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="placesToEatModal" tabindex="-1" role="dialog" aria-labelledby="placesToEatModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="placesToEatModalLabel">Places To Eat</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>There will be a buffet provided for all of our guests in the evening but if you are looking for somewhere to eat during the day
+                                    here are a few suggestions:</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="localinfo-item">
+                    <h4>Taxis</h4>
+                    <p><a href="#"><img class="img-localinfo img-responsive" src="{{ site.baseurl }}images/taxis.jpg" data-toggle="modal" data-target="#taxisModal" /></a></p>
+                    <p class="text-center"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/taniazza/" target="_blank">Tania 
+                    Caruso</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a></small></em></p>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="taxisModal" tabindex="-1" role="dialog" aria-labelledby="taxisModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="taxisModalLabel">Taxis</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Below are the numbers of a couple of local taxi firms:</p>
+                                    <address class="text-left">
+                                        <strong>Loughborough Taxis</strong><br>
+                                        <abbr title="Telephone">T:</abbr> 01509 230230
+                                    </address>
+                                    <address class="text-left">
+                                        <strong>ACE/ABC</strong><br>
+                                        <abbr title="Telephone">T:</abbr> 0800 281004 / 01509 215656
+                                    </address>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /Accommodation and local info -->
+    <!-- /Local info -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
