@@ -45,7 +45,6 @@ body {
 /* Venue Info */
 
 #venue-info {
-	/* temp */
   color: #ffffff;
   background: #0a5175;
   padding: 50px 0;
@@ -186,6 +185,44 @@ body {
 
 .img-localinfo {
   margin: 0 auto;
+}
+
+/* Gifts */
+.gifts {
+    color: #ffffff;
+    /*display: table;*/
+    /*height: 400px;
+    width: 100%;*/
+    background: url({{ site.baseurl }}images/present.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center; 
+    padding: 100px 0; 
+}
+
+.gifts h1 {
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.gifts-text {
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px 0;
+}
+
+.children {
+    padding: 50px 0;
+    background: #0a5175;
+    color: #ffffff;
+}
+
+.footer {
+    padding: 50px 0;
 }
 
 /* Responsive */
