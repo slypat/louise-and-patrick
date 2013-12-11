@@ -8,12 +8,14 @@ body {
   width: 100%;
 }
 
+body {
+    margin-top: 50px; /* Offset the height of the nav bar */
+}
+
 .vert-text {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  
-  /* temporary */
   color: #ffffff;
 }
 
@@ -28,7 +30,19 @@ body {
 	color: #ffffff;
 }
 
-/* Full Page Image Header Area */
+/* Intro */
+
+#home {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    #home {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+}
 
 .header {
   display: table;
@@ -45,16 +59,26 @@ body {
 /* Venue Info */
 
 #venue-info {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    #venue-info {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+}
+
+#venue-info-title {
   color: #ffffff;
   background: #0a5175;
   padding: 50px 0;
 }
 
-#venue-info h2 {
+#venue-info-title h2 {
 	margin: 0;
 }
-/* MARKETING CONTENT
--------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
@@ -62,23 +86,12 @@ body {
   padding-right: 15px;
 }
 
-/* Center align the text within the three columns below the carousel */
-/* .marketing .col-lg-4 { */
-/*   text-align: center; */
-/*   margin-bottom: 20px; */
-/* } */
 .marketing h2 {
   font-weight: normal;
 }
-/* .marketing .col-lg-4 p { */
-/*   margin-left: 10px; */
-/*   margin-right: 10px; */
-/* } */
-
-/* Featurettes
-------------------------- */
 
 .venue {
+    margin-top: 50px;
     padding-top: 150px; /* Vertically center images part 1: add padding above and below text. */
     overflow: hidden; /* Vertically center images part 2: clear their floats. */
 }
@@ -121,16 +134,8 @@ body {
   letter-spacing: -1px;
 }
 
-.pat_top-margin {
-	margin-top: 50px;
-}
-
-/* Details */
-
 .details {
-/*   background: #7fbbda; */
   padding: 50px 0;
-/*   color: #ffffff; */
 }
 
 .detail-item {
@@ -149,7 +154,19 @@ body {
   text-align: center;
 }
 
-/* Callout */
+/* RSVP */
+
+#rsvp {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    #rsvp {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+}
 
 .callout {
   color: #ffffff;
@@ -169,14 +186,64 @@ body {
 	color: #ffffff;
 }
 
-/* Local Info */
-
-.localinfo {
-    padding: 50px 0;
+.rsvp-vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
 }
 
-.local-info-details {
-    padding: 50px 0;
+.rsvp-vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.rsvp-vert-text h1 a {
+    color: #ffffff;
+}
+
+@media all and (min-width: 550px) and (max-width: 767px) {
+    .rsvp-vert-text h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .rsvp-vert-text h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .rsvp-vert-text h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .rsvp-vert-text h1 {
+        font-size: 4.5em;
+    }
+}
+
+/* Local Info */
+
+#localinfo {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    #localinfo {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+}
+
+.localinfo-title {
+    padding: 50px 0;    
 }
 
 .localinfo-item {
@@ -188,11 +255,21 @@ body {
 }
 
 /* Gifts */
+
+#gifts {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    #gifts {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+}
+
 .gifts {
     color: #ffffff;
-    /*display: table;*/
-    /*height: 400px;
-    width: 100%;*/
     background: url({{ site.baseurl }}images/present.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -215,22 +292,28 @@ body {
     padding: 50px 0;
 }
 
+/* Children */
+
+#children {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    #children {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+}
+
 .children {
     padding: 50px 0;
     background: #0a5175;
     color: #ffffff;
 }
 
+/* Footer */
+
 .footer {
     padding: 50px 0;
 }
-
-/* Responsive */
-
-/* @media (max-width: 768px) { */
-    
-/*   .header { */
-/*     background: url({{ site.baseurl }}images/header-bg.jpg) no-repeat center center scroll;  */
-/*   } */
-
-/* } */

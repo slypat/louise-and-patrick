@@ -15,8 +15,8 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-
+  <body data-spy="scroll" data-target=".navbar" data-offset="0">
+    
     <!--------------------------------- Nav bar ---------------------------------->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -47,173 +47,175 @@
 	</nav>
     <!------------------------- End Navbar ------------------------------>
     
-    <!-- Full Page Image Header Area -->
+    <!-------------------------- Intro ---------------------------------->
     <div id="home" class="header">
-      <div class="vert-text">
-        <h1>Louise &amp; Patrick</h1>
-        <p class="lead">Saturday 29th March 2014</p>
-<!--         <a href="#about" class="btn btn-default btn-lg">Find Out More</a> -->
-      </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
-    
-    <!-- Venue Information -->
-    <div id="venue-info">
-      <div class="container text-center">
-        <h2>Venue &amp; Church Information</h2>
-      </div>
-    </div>
-
-    <div class="container marketing">
-        <!-- Prestwold Hall -->
-	    <div class="pat_top-margin venue">
-	        <div class="row">
-	            
-	            <div class="col-md-6 col-md-push-6">
-                    <p class="text-right"><img class="venue-image" src="{{ site.baseurl }}images/prestwold-hall.jpg" alt="Prestwold Hall"></p>
-                    <p class="text-right"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/philmciver/" target="_blank">Phil 
-                    McIver</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a>, image has 
-                    been modified</small></em></p>
-                </div>
-                
-	            <div class="col-md-6 col-md-pull-6">
-	                <h2 class="venue-heading">Prestwold Hall<br /><span class="text-muted">5.30pm</span></h2>
-                    <p class="lead">Please join us for drinks, supper and dancing. Speeches are at 6.00pm so please be prompt.</p>
-	            </div>
-	            
-	        </div>
-        </div>
-	    
-	    <!-- Details -->
-        <div class="details">
-            <div class="row">
-            
-                <div class="col-md-3 text-center">
-                    <div class="detail-item">
-                        <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
-                        <h2>Address</h2>
-	                    <address>
-	                        <strong>Prestwold Hall</strong><br />
-	                        Prestwold<br />
-	                        Loughborough<br />
-	                        LE12 5SQ<br />
-	                        <abbr title="Telephone">T:</abbr> +44 (0)1509 880236<br />
-	                        <abbr title="Website">W:</abbr> <a href="http://www.prestwold-hall.com/" target="_blank">www.prestwold-hall.com</a>
-	                    </address>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 text-center">
-                    <div class="detail-item">
-                        <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
-                        <h2>Parking</h2>
-		                <p>There is ample parking at Prestwold Hall and you are welcome to leave your car in the car park overnight. Please collect it by 11.30am the
-		                following day.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 text-center">
-                    <div class="detail-item">
-                        <div class="detail-icon"><span class="glyphicon glyphicon-user"></span></div>
-                        <h2>Dresscode</h2>
-                        <p>The bridal party will be wearing morning dress. Feel free to dust off your tails (and hats for the ladies) but as long as you look smart we'll let you in!</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 text-center">
-                    <div class="detail-item">
-                        <div class="detail-icon"><span class="glyphicon glyphicon-time"></span></div>
-                        <h2>Carriages</h2>
-                        <p>At midnight.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Details -->
-	    
-	    <hr />
-	    
-	    <!-- St. Margret Clitherow's -->
-	    <div class="pat_top-margin venue">
-            <div class="row">
-                
-                <div class="col-md-6">
-                    <p><img class="venue-image" src="{{ site.baseurl }}images/st-margarets-collage.png" alt="St. Margaret Clitherow's"></p>
-                    <p><em><small>Photos &copy; <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">East Leake And Keyworth Roman Catholic Parish</a></small></em></p>
-                </div>
-                
-                <div class="col-md-6">
-                    <h2 class="venue-heading text-right">St. Margaret Clitherow's<br /><span class="text-muted">11.30am</span></h2>
-                    <p class="lead text-right">The wedding ceremony will be held at 11.30am at St. Margaret Clitherow's Catholic Church. We would be delighted 
-                    if you would like to share this part of our day.</p>
-                </div>
-                
-            </div>
-        </div>
-	    <!-- <div class="featurette">
-            <img class="featurette-image pull-left" src="{{ site.baseurl }}images/st-margarets-collage.png" alt="Prestwold Hall">
-            <h2 class="featurette-heading text-right">St. Margaret Clitherow's<br /><span class="text-muted">11.30am</span></h2>
-            <p class="lead text-right">The wedding ceremony will be held at 11.30am at St. Margaret Clitherow's Catholic Church. We would be delighted 
-            if you would like to share this part of our day.</p>
-        </div> -->
-        
-        <div class="details">
-            <div class="row">
-            
-                <div class="col-md-3 col-md-offset-3 text-center">
-                    <div class="detail-item">
-                        <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
-                        <h2>Address</h2>
-		                <address>
-		                    <strong>St. Margaret Clitherow's Catholic Church</strong><br />
-		                    Willow Brook<br />
-		                    Keyworth<br />
-		                    NG12 5BB<br />
-		                    <abbr title="Website">W:</abbr> <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">www.eastleakeandkeyworthrcp.co.uk</a>
-		                </address>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 text-center">
-                    <div class="detail-item">
-                        <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
-                        <h2>Parking</h2>
-                        <p>There is a car park round the back of the church as well as on-road parking along Willow Brook and Selby Lane</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-
-    <!-- Callout -->
-    <div id="rsvp" class="callout">
         <div class="vert-text">
-            <h1><a href="mailto:rsvp@louiseandpatrick.com">rsvp@louiseandpatrick.com</a></h1>
+            <h1>Louise &amp; Patrick</h1>
+            <p class="lead">Saturday 29th March 2014</p>
         </div>
     </div>
-    <!-- /Callout -->
+    <!-------------------------- /Intro --------------------------------->
     
-    <!-- Intro -->
-    <div class="rsvp-info">
-		<div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2>Please RSVP by 31st January 2014</h2>
-                    <p class="lead">Send us an email to let us know if you can or can't make it, and if you have any specific dietary 
-                    requirements as a buffet will be provided. Don't forget to let us know <a href="#children">who all's coming</a>!</p>
+    <!---------------------- Venue Information -------------------------->
+    <div id="venue-info">
+        
+        <div id="venue-info-title">
+          <div class="container text-center">
+            <h2>Venue &amp; Church Information</h2>
+          </div>
+        </div>
+    
+        <div class="container marketing">
+            
+            <!-- Prestwold Hall -->
+    	    <div class="venue">
+    	        <div class="row">
+    	            
+    	            <div class="col-md-6 col-md-push-6">
+                        <p class="text-right"><img class="venue-image" src="{{ site.baseurl }}images/prestwold-hall.jpg" alt="Prestwold Hall"></p>
+                        <p class="text-right"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/philmciver/" target="_blank">Phil 
+                        McIver</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a>, image has 
+                        been modified</small></em></p>
+                    </div>
+                    
+    	            <div class="col-md-6 col-md-pull-6">
+    	                <h2 class="venue-heading">Prestwold Hall<br /><span class="text-muted">5.30pm</span></h2>
+                        <p class="lead">Please join us for drinks, supper and dancing. Speeches are at 6.00pm so please be prompt.</p>
+    	            </div>
+    	            
+    	        </div>
+            </div>
+    	    
+    	    <!-- Prestwold Hall Details -->
+            <div class="details">
+                <div class="row">
+                
+                    <div class="col-md-3 text-center">
+                        <div class="detail-item">
+                            <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
+                            <h2>Address</h2>
+    	                    <address>
+    	                        <strong>Prestwold Hall</strong><br />
+    	                        Prestwold<br />
+    	                        Loughborough<br />
+    	                        LE12 5SQ<br />
+    	                        <abbr title="Telephone">T:</abbr> +44 (0)1509 880236<br />
+    	                        <abbr title="Website">W:</abbr> <a href="http://www.prestwold-hall.com/" target="_blank">www.prestwold-hall.com</a>
+    	                    </address>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 text-center">
+                        <div class="detail-item">
+                            <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
+                            <h2>Parking</h2>
+    		                <p>There is ample parking at Prestwold Hall and you are welcome to leave your car in the car park overnight. Please collect it by 11.30am the
+    		                following day.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 text-center">
+                        <div class="detail-item">
+                            <div class="detail-icon"><span class="glyphicon glyphicon-user"></span></div>
+                            <h2>Dresscode</h2>
+                            <p>The bridal party will be wearing morning dress. Feel free to dust off your tails (and hats for the ladies) but as long as you look smart we'll let you in!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 text-center">
+                        <div class="detail-item">
+                            <div class="detail-icon"><span class="glyphicon glyphicon-time"></span></div>
+                            <h2>Carriages</h2>
+                            <p>At midnight.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Prestwold Hall Details -->
+    	    
+    	    <hr />
+    	    
+    	    <!-- St. Margret Clitherow's -->
+    	    <div class="venue">
+                <div class="row">
+                    
+                    <div class="col-md-6">
+                        <p><img class="venue-image" src="{{ site.baseurl }}images/st-margarets-collage.png" alt="St. Margaret Clitherow's"></p>
+                        <p><em><small>Photos &copy; <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">East Leake And Keyworth Roman Catholic Parish</a></small></em></p>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h2 class="venue-heading text-right">St. Margaret Clitherow's<br /><span class="text-muted">11.30am</span></h2>
+                        <p class="lead text-right">The wedding ceremony will be held at 11.30am at St. Margaret Clitherow's Catholic Church. We would be delighted 
+                        if you would like to share this part of our day.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- St. Margret Clitherow's Details -->
+            <div class="details">
+                <div class="row">
+                
+                    <div class="col-md-3 col-md-offset-3 text-center">
+                        <div class="detail-item">
+                            <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
+                            <h2>Address</h2>
+    		                <address>
+    		                    <strong>St. Margaret Clitherow's Catholic Church</strong><br />
+    		                    Willow Brook<br />
+    		                    Keyworth<br />
+    		                    NG12 5BB<br />
+    		                    <abbr title="Website">W:</abbr> <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">www.eastleakeandkeyworthrcp.co.uk</a>
+    		                </address>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 text-center">
+                        <div class="detail-item">
+                            <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
+                            <h2>Parking</h2>
+                            <p>There is a car park round the back of the church as well as on-road parking along Willow Brook and Selby Lane</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /St. Margret Clitherow's Details -->
+        </div>
+    </div>
+    <!---------------------- /Venue Information ------------------------->
+
+    <!----------------------------- RSVP -------------------------------->
+    <div id="rsvp">    
+        <div class="callout">
+            <div class="rsvp-vert-text">
+                <h1><a href="mailto:rsvp@louiseandpatrick.com">rsvp@louiseandpatrick.com</a></h1>
+            </div>
+        </div>
+        
+        <div class="rsvp-info">
+    		<div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2>Please RSVP by 31st January 2014</h2>
+                        <p class="lead">Send us an <a href="mailto:rsvp@louiseandpatrick.com">email</a> to let us know if you can or can't make it, and if you have any specific dietary 
+                        requirements as a buffet will be provided. Don't forget to let us know <a href="#children">who all's coming</a>!</p>
+                        <p>If you'd prefer you can RSVP by post to the address on the invitation.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /Intro -->
+    <!----------------------------- /RSVP ------------------------------->
     
-    <!-- Local info -->
-    <div id="localinfo" class="container localinfo">
-        <h2 class="text-center">Local Information</h2>
+    <!-------------------------- Local info ----------------------------->
+    <div id="localinfo" class="container">
+        <h2 class="localinfo-title text-center">Local Information</h2>
         
-        <div class="row local-info-details">
+        <div class="row">
+            
+            <!-- Accommodation -->
             <div class="col-md-4 text-center">
                 <div class="localinfo-item">
                     <h4>Accommodation</h4>
@@ -256,6 +258,8 @@
                     </div><!-- /.modal -->
                 </div>
             </div>
+            
+            <!-- Places To Eat -->
             <div class="col-md-4 text-center">
                 <div class="localinfo-item">
                     <h4>Places To Eat</h4>
@@ -303,6 +307,8 @@
                     </div><!-- /.modal -->
                 </div>
             </div>
+            
+            <!-- Taxis -->
             <div class="col-md-4 text-center">
                 <div class="localinfo-item">
                     <h4>Taxis</h4>
@@ -339,47 +345,51 @@
             </div>
         </div>
     </div>
-    <!-- /Local info -->
+    <!-------------------------- /Local info ----------------------------->
     
-    <!-- Gifts -->
-    <div id="gifts" class="gifts">
-        <div class="gifts-text">
-            <h1>Gifts</h1>
-            <p class="lead">Just your company on the day itself will be gift enough!</p>
+    <!---------------------------- Gifts --------------------------------->
+    <div id="gifts">
+        <div class="gifts">
+            <div class="gifts-text">
+                <h1>Gifts</h1>
+                <p class="lead">Just your company on the day itself will be gift enough!</p>
+            </div>
+        </div>
+        <p class="text-right">
+            <em><small>Photo &copy; <a href="http://www.flickr.com/photos/ejorpin/" target="_blank">Emily Orpin </a>, 
+            <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a></small></em>
+        </p>
+        <div class="container">
+            <p class="lead text-center">If you insist on getting us a gift we shall, in due course, be putting some gift ideas here.</p>
         </div>
     </div>
-    <p class="text-right">
-        <em><small>Photo &copy; <a href="http://www.flickr.com/photos/ejorpin/" target="_blank">Emily Orpin </a>, 
-        <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a></small></em>
-    </p>
-    <div class="container">
-        <p class="lead text-center">If you insist on getting us a gift we shall, in due course, be putting some gift ideas here.</p>
-    </div>
-    <!-- /Gifts -->
+    <!---------------------------- /Gifts -------------------------------->
     
-    <!-- Children -->
-    <div id="children" class="children">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h1>Children</h1>
-                    <p class="lead">For guests with children, you're very welcome to bring them along to the party. 
-                        Equally, you're welcome to book the babysitter in and have a night to yourselves!</p>
-                    <p>If you can let us know either way when you <a href="#rsvp">RSVP</a> so we have an idea of numbers that 
-                        would be great.</p>
+    <!--------------------------- Children ------------------------------->
+    <div id="children">
+        <div class="children">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1>Children</h1>
+                        <p class="lead">For guests with children, you're very welcome to bring them along to the party. 
+                            Equally, you're welcome to book the babysitter in and have a night to yourselves!</p>
+                        <p>If you can let us know either way when you <a href="#rsvp">RSVP</a> so we have an idea of numbers that 
+                            would be great.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /Children -->
+    <!--------------------------- /Children ------------------------------>
     
-    <!-- Footer -->
+    <!---------------------------- Footer -------------------------------->
     <div class="footer container text-center">
         <p>Copyright &copy; Patrick Armstrong 2013
             <br />(unless otherwise stated)</p>
         <p>Photos of Patrick and Louise by <a href="http://bursill.com/" target="_blank">Ian Bursill</a></p>
     </div>
-    <!-- /Footer -->
+    <!---------------------------- /Footer ------------------------------->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
@@ -409,7 +419,7 @@
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
               $('html,body').animate({
-                scrollTop: target.offset().top - 50 // 50 is navbar offset
+                scrollTop: target.offset().top
               }, 1000);
               return false;
             }
@@ -417,6 +427,5 @@
         });
       });
     </script>
-    
   </body>
 </html>
