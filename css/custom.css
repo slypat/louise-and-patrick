@@ -30,6 +30,17 @@ body {
 	color: #ffffff;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Intro */
 
 #home {
@@ -49,34 +60,34 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url({{ site.baseurl }}images/header-bg.jpg) no-repeat center center fixed; 
+  background: url('http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,h_1500/v1408999756/Armstrong-290314-196_p1wakj.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-/* Venue Info */
+/* Thank yous */
 
-#venue-info {
+#thank-yous {
     padding-top: 50px;
     margin-top: -50px;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
-    #venue-info {
+    #thank-yous {
         padding-top: 100px;
         margin-top: -100px;
     }
 }
 
-#venue-info-title {
+#thank-yous-title {
   color: #ffffff;
   background: #0a5175;
   padding: 50px 0;
 }
 
-#venue-info-title h2 {
+#thank-yous-title h2 {
 	margin: 0;
 }
 
@@ -90,17 +101,17 @@ body {
   font-weight: normal;
 }
 
-.venue {
+.thank-you {
     margin-top: 50px;
     padding-top: 150px; /* Vertically center images part 1: add padding above and below text. */
     overflow: hidden; /* Vertically center images part 2: clear their floats. */
 }
 
-.venue-image {
+.thank-you-image {
     margin-top: -150px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
-.venue-heading {
+.thank-you-heading {
     font-size: 50px;
     font-weight: 300;
     line-height: 1;
@@ -150,19 +161,19 @@ body {
   width: 140px;
   height: 140px;
   line-height: 136px;
-  vertical-align: middle; 
+  vertical-align: middle;
   text-align: center;
 }
 
-/* RSVP */
+/* Photos */
 
-#rsvp {
+#photos {
     padding-top: 50px;
     margin-top: -50px;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
-    #rsvp {
+    #photos {
         padding-top: 100px;
         margin-top: -100px;
     }
@@ -173,143 +184,85 @@ body {
   display: table;
   height: 400px;
   width: 100%;
-  background: url({{ site.baseurl }}images/rsvp-bg.jpg) no-repeat center center fixed; 
+  background: url('http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,h_1500/v1408998537/Armstrong-290314-223_zsdlqi.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.rsvp-info {
+.photos-info {
 	padding: 50px 0;
 	background: #0a5175;
 	color: #ffffff;
 }
 
-.rsvp-vert-text {
+.photos-vert-text {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
 }
 
-.rsvp-vert-text h1 {
+.photos-vert-text h1 {
   padding: 0;
   margin: 0;
   font-size: 1.5em;
   font-weight: 700;
 }
 
-.rsvp-vert-text h1 a {
+.photos-vert-text h1 a {
     color: #ffffff;
 }
 
 @media all and (min-width: 550px) and (max-width: 767px) {
-    .rsvp-vert-text h1 {
+    .photos-vert-text h1 {
         font-size: 2.5em;
     }
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
-    .rsvp-vert-text h1 {
+    .photos-vert-text h1 {
         font-size: 3.5em;
     }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
-    .rsvp-vert-text h1 {
+    .photos-vert-text h1 {
         font-size: 3.5em;
     }
 }
 
 @media all and (min-width: 1200px) {
-    .rsvp-vert-text h1 {
+    .photos-vert-text h1 {
         font-size: 4.5em;
     }
 }
 
-/* Local Info */
+/* Galleries */
 
-#localinfo {
+#galleries {
     padding-top: 50px;
     margin-top: -50px;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
-    #localinfo {
+    #galleries {
         padding-top: 100px;
         margin-top: -100px;
     }
 }
 
-.localinfo-title {
-    padding: 50px 0;    
+.galleries-title {
+    padding: 50px 0;
 }
 
 .localinfo-item {
   margin-bottom: 25px;
 }
 
-.img-localinfo {
+.img-gallery {
   margin: 0 auto;
-}
-
-/* Gifts */
-
-#gifts {
-    padding-top: 50px;
-    margin-top: -50px;
-}
-
-@media all and (min-width: 768px) and (max-width: 991px) {
-    #gifts {
-        padding-top: 100px;
-        margin-top: -100px;
-    }
-}
-
-.gifts {
-    color: #ffffff;
-    background: url({{ site.baseurl }}images/present.jpg) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center; 
-    padding: 100px 0; 
-}
-
-.gifts h1 {
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-}
-
-.gifts-text {
-    background-color: rgba(0,0,0,0.5);
-    padding: 50px 0;
-}
-
-/* Children */
-
-#children {
-    padding-top: 50px;
-    margin-top: -50px;
-}
-
-@media all and (min-width: 768px) and (max-width: 991px) {
-    #children {
-        padding-top: 100px;
-        margin-top: -100px;
-    }
-}
-
-.children {
-    padding: 50px 0;
-    background: #0a5175;
-    color: #ffffff;
 }
 
 /* Footer */

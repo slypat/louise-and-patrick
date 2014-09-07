@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="{{ site.baseurl }}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+
+    <!-- LightView stuff -->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/js/excanvas/excanvas.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/spinners/spinners.min.js"></script>
+    <script type="text/javascript" src="/js/lightview/lightview.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/lightview/lightview.css"/>
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="/js/louiseandpatrick.js"></script>
+
     <!-- Custom css -->
     <link href="{{ site.baseurl }}css/custom.css" rel="stylesheet" media="screen">
 
@@ -14,10 +29,11 @@
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="5">
-    
-    <!--------------------------------- Nav bar ---------------------------------->
+
+    <!-- ------------------------------- Nav bar -------------------------------- -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -30,404 +46,263 @@
 			  </button>
 			  <a class="navbar-brand" href="#home">Louise &amp; Patrick</a>
 			</div>
-			
+
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 			  <ul class="nav navbar-nav">
 			    <li class="active"><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                <li><a href="#venue-info">Venue Information</a></li>
-                <li><a href="#rsvp">RSVP</a></li>
-                <li><a href="#localinfo">Local Information</a></li>
-                <li><a href="#gifts">Gifts</a></li>
-                <li><a href="#children">Children</a></li>
-			    
+                <li><a href="#thank-yous">Thank yous</a></li>
+                <li><a href="#photos">Photos</a></li>
 			  </ul>
 			</div><!-- /.navbar-collapse -->
 		</div>
 	</nav>
-    <!------------------------- End Navbar ------------------------------>
-    
-    <!-------------------------- Intro ---------------------------------->
-    <div id="home" class="header">
-        <div class="vert-text">
-            <h1>Louise &amp; Patrick</h1>
-            <p class="lead">Saturday 29th March 2014</p>
-        </div>
-    </div>
-    <!-------------------------- /Intro --------------------------------->
-    
-    <!---------------------- Venue Information -------------------------->
-    <div id="venue-info">
-        
-        <div id="venue-info-title">
-          <div class="container text-center">
-            <h2>Venue &amp; Church Information</h2>
-          </div>
-        </div>
-    
-        <div class="container marketing">
-            
-            <!-- Prestwold Hall -->
-    	    <div class="venue">
-    	        <div class="row">
-    	            
-    	            <div class="col-md-6 col-md-push-6">
-                        <p class="text-right"><img class="venue-image" src="{{ site.baseurl }}images/prestwold-hall.jpg" alt="Prestwold Hall"></p>
-                        <p class="text-right"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/philmciver/" target="_blank">Phil 
-                        McIver</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a>, image has 
-                        been modified</small></em></p>
-                    </div>
-                    
-    	            <div class="col-md-6 col-md-pull-6">
-    	                <h2 class="venue-heading">Prestwold Hall<br /><span class="text-muted">5.30pm</span></h2>
-                        <p class="lead">Please join us for drinks, supper and dancing. Speeches are at 6.00pm so please be prompt.</p>
-    	            </div>
-    	            
-    	        </div>
-            </div>
-    	    
-    	    <!-- Prestwold Hall Details -->
-            <div class="details">
-                <div class="row">
-                
-                    <div class="col-md-3 text-center">
-                        <div class="detail-item">
-                            <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
-                            <h2>Address</h2>
-    	                    <address>
-    	                        <strong>Prestwold Hall</strong><br />
-    	                        Prestwold<br />
-    	                        Loughborough<br />
-    	                        LE12 5SQ<br />
-    	                        <abbr title="Telephone">T:</abbr> +44 (0)1509 880236<br />
-    	                        <abbr title="Website">W:</abbr> <a href="http://www.prestwold-hall.com/" target="_blank">www.prestwold-hall.com</a>
-    	                    </address>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 text-center">
-                        <div class="detail-item">
-                            <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
-                            <h2>Parking</h2>
-    		                <p>There is ample parking at Prestwold Hall and you are welcome to leave your car in the car park overnight. Please collect it by 11.30am the
-    		                following day.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 text-center">
-                        <div class="detail-item">
-                            <div class="detail-icon"><span class="glyphicon glyphicon-user"></span></div>
-                            <h2>Dresscode</h2>
-                            <p>The bridal party will be wearing morning dress. Feel free to dust off your tails (and hats for the ladies) but as long as you look smart we'll let you in!</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 text-center">
-                        <div class="detail-item">
-                            <div class="detail-icon"><span class="glyphicon glyphicon-time"></span></div>
-                            <h2>Carriages</h2>
-                            <p>At midnight.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- / Prestwold Hall Details -->
-    	    
-    	    <hr />
-    	    
-    	    <!-- St. Margret Clitherow's -->
-    	    <div class="venue">
-                <div class="row">
-                    
-                    <div class="col-md-6">
-                        <p><img class="venue-image" src="{{ site.baseurl }}images/st-margarets-collage.png" alt="St. Margaret Clitherow's"></p>
-                        <p><em><small>Photos &copy; <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">East Leake And Keyworth Roman Catholic Parish</a></small></em></p>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <h2 class="venue-heading text-right">St. Margaret Clitherow's<br /><span class="text-muted">11.30am</span></h2>
-                        <p class="lead text-right">The wedding ceremony will be held at 11.30am at St. Margaret Clitherow's Catholic Church. We would be delighted 
-                        if you would like to share this part of our day.</p>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <!-- St. Margret Clitherow's Details -->
-            <div class="details">
-                <div class="row">
-                
-                    <div class="col-md-3 col-md-offset-3 text-center">
-                        <div class="detail-item">
-                            <div class="detail-icon"><span class="glyphicon glyphicon-home"></span></div>
-                            <h2>Address</h2>
-    		                <address>
-    		                    <strong>St. Margaret Clitherow's Catholic Church</strong><br />
-    		                    Willow Brook<br />
-    		                    Keyworth<br />
-    		                    NG12 5BB<br />
-    		                    <abbr title="Website">W:</abbr> <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">www.eastleakeandkeyworthrcp.co.uk</a>
-    		                </address>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 text-center">
-                        <div class="detail-item">
-                            <div class="detail-icon"><span class="glyphicon glyphicon-road"></span></div>
-                            <h2>Parking</h2>
-                            <p>There is a car park round the back of the church as well as on-road parking along Willow Brook and Selby Lane</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <!-- /St. Margret Clitherow's Details -->
-        </div>
-    </div>
-    <!---------------------- /Venue Information ------------------------->
+    <!-- ----------------------- End Navbar ---------------------------- -->
 
-    <!----------------------------- RSVP -------------------------------->
-    <div id="rsvp">    
-        <div class="callout">
-            <div class="rsvp-vert-text">
-                <h1><a href="mailto:rsvp@louiseandpatrick.com">rsvp@louiseandpatrick.com</a></h1>
-            </div>
-        </div>
-        
-        <div class="rsvp-info">
-    		<div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                        <h2>Please RSVP by 31st January 2014</h2>
-                        <p class="lead">Send us an <a href="mailto:rsvp@louiseandpatrick.com">email</a> to let us know if you can or can't make it, and if you have any specific dietary 
-                        requirements as a buffet will be provided. Don't forget to let us know <a href="#children">who all's coming</a>!</p>
-                        <p>If you'd prefer you can RSVP by post to the address on the invitation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ------------------------ Intro -------------------------------- -->
+    <div id="home" class="header">
+
     </div>
-    <!----------------------------- /RSVP ------------------------------->
-    
-    <!-------------------------- Local info ----------------------------->
-    <div id="localinfo" class="container">
-        <h2 class="localinfo-title text-center">Local Information</h2>
-        
-        <div class="row">
-            
-            <!-- Accommodation -->
-            <div class="col-md-4 text-center">
-                <div class="localinfo-item">
-                    <h4>Accommodation</h4>
-                    <p><a href="#"><img class="img-localinfo img-responsive" src="{{ site.baseurl }}images/hotel-room.jpg" data-toggle="modal" data-target="#accommodationModal" /></a></p>
-                    <p class="text-center"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/intercontinentalhongkong/" target="_blank">InterContinental 
-                    Hong Kong</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a></small></em></p>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="accommodationModal" tabindex="-1" role="dialog" aria-labelledby="accommodationModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="accommodationModalLabel">Accommodation</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>There is a wide selection of hotels within a 15-mile radius, many of which have special rates for guests of 
-                                    Prestwold Hall - please book directly with the individual hotels. Below are a few suggestions but if you would like a more complete list <a href="mailto:info@louiseandpatrick.com">send us an email</a>.</p>
-                                    
-                                    <div class="text-left">
-                                        <p><strong>Travelodge Loughborough Central Hotel</strong> Bridge Street, Loughborough, LE11 1NQ</p>
-                                        <p><strong>Premier Inn</strong> Southfield Road, Loughborough, LE11 9SA<p>
-                                        <p><strong>Travelodge Loughborough Central Hotel</strong> Bridge Street, Loughborough, LE11 1NQ</p>
-                                        <p><strong>Premier Inn</strong> Southfield Road, Loughborough, LE11 9SA</p>
-                                        <p><strong>Ramada Loughborough Hotel</strong> The High Street, Loughborough, LE11 2QL</p>
-                                        <p><strong>Guesthouse at Rempstone</strong> Main Street, Rempstone, Loughborough, LE12 6RH</p>
-                                        <p><strong>The Hunting Lodge</strong> 38 South Street, Barrow Upon Soar, Loughborough, LE12 8LZ</p>
-                                        <p><strong>Number 88</strong> 88 Leicester Road, Loughborough, LE11 2AQ</p>
-                                        <p><strong>Imago at Burleigh Court</strong> Loughborough University, Loughborough, LE11 3RZ</p>
-                                        <p><strong>Imago at Link Hotel</strong> New Ashby Road, Loughborough, LE11 4EX</p>
-                                        <p><strong>Holiday Inn</strong> 129 St. nicholas Circle, Leicester, LE1 5LX</p>
-                                        <p><strong>Nottingham South Premier Inn</strong> Loughborough Road, Nottingham, NG11 6LS</p>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                </div>
-            </div>
-            
-            <!-- Places To Eat -->
-            <div class="col-md-4 text-center">
-                <div class="localinfo-item">
-                    <h4>Places To Eat</h4>
-                    <p><a href="#"><img class="img-localinfo img-responsive" src="{{ site.baseurl }}images/places-to-eat.jpg" data-toggle="modal" data-target="#placesToEatModal" /></a></p>
-                    <p class="text-center"><em><small>Photo courtesy of <a href="http://join.deathtothestockphoto.com/" target="_blank">Death 
-                    To The Stock Photo</a></small></em></p>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="placesToEatModal" tabindex="-1" role="dialog" aria-labelledby="placesToEatModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="placesToEatModalLabel">Places To Eat</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>There will be a buffet provided for all of our guests in the evening but if you are looking for somewhere to eat during the day
-                                    here are a few suggestions:</p>
-                                    <div class="text-left">
-                                        <p><strong>Perkins</strong> <small><a href="http://www.perkins-family.co.uk/perkins-restaurant.perkins-restaurant" target="_blank">(website)</a></small></p>
-                                        <p>Highly recommended restaurant in Keyworth. Great food, great wine, great service. 
-                                            Booking in advance is advised. 3 min drive, 20 min walk from the church. Parking available.</p>
-                                        <p><strong>Keyworth Tavern</strong> <small><a href="http://www.pubpeople.com/keyworthtavern" target="_blank">(website)</a></small></h4>
-                                        <p>Newly refurbished family-friendly pub/restaurant serving a range of bar meals. In Keyworth, 1 min drive, 5 min walk from 
-                                            the church. Parking available.</p>
-                                        <p><strong>The Salutation Inn</strong> <small><a href="https://www.facebook.com/thesalutationkeyworth" target="_blank">(website)</a></small></h4>
-                                        <p>Another family friendly Keyworth pub serving lunch between 12pm and 2pm on a Saturday (though 
-                                            please check this with the pub). 3 min drive, 20 min walk from the church. Parking 
-                                            available.</p>
-                                        <p><strong>Loughborough Restaurants</strong></p>
-                                        <p>If you would prefer to eat nearer to Prestwold Hall, Loughborough town centre has many 
-                                            different options available: from cafes serving lighter options like 
-                                            <a href="http://www.tripadvisor.co.uk/Restaurant_Review-g190776-d3802735-Reviews-Party_Pieces-Loughborough_Leicestershire_England.html" target="_blank">Party Pieces</a>
-                                            and all the usual chain coffee shops, to flame-grilled chicken and steak houses like <a href="http://fernandosgrillhouse.co.uk/" target="_blank">Fernandos</a>.
-                                            There are Italian restaurants (like <a href="http://www.caravelli.co.uk/" target=_"blank">Caravelli</a>), Chinese, Indian and even 
-                                            Australian restaurants (like <a href="http://www.moomba-restaurant.com/" target="_blank">Moomba</a>)! 
-                                            And of course there is a McDonald's, Subway and a Greggs (for all the Geordies!).</p>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                </div>
-            </div>
-            
-            <!-- Taxis -->
-            <div class="col-md-4 text-center">
-                <div class="localinfo-item">
-                    <h4>Taxis</h4>
-                    <p><a href="#"><img class="img-localinfo img-responsive" src="{{ site.baseurl }}images/taxis.jpg" data-toggle="modal" data-target="#taxisModal" /></a></p>
-                    <p class="text-center"><em><small>Photo &copy; <a href="http://www.flickr.com/photos/taniazza/" target="_blank">Tania 
-                    Caruso</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a></small></em></p>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="taxisModal" tabindex="-1" role="dialog" aria-labelledby="taxisModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="taxisModalLabel">Taxis</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Below are the numbers of a couple of local taxi firms:</p>
-                                    <address class="text-left">
-                                        <strong>Loughborough Taxis</strong><br>
-                                        <abbr title="Telephone">T:</abbr> 01509 230230
-                                    </address>
-                                    <address class="text-left">
-                                        <strong>ACE/ABC</strong><br>
-                                        <abbr title="Telephone">T:</abbr> 0800 281004 / 01509 215656
-                                    </address>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-------------------------- /Local info ----------------------------->
-    
-    <!---------------------------- Gifts --------------------------------->
-    <div id="gifts">
-        <div class="gifts">
-            <div class="gifts-text">
-                <h1>Gifts</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 text-center">
-                            <p class="lead">Your presence and not your presents is more than enough but if you would like to then we have set up a 
-                                list for contributions to our honeymoon in Japan.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="text-right">
-            <em><small>Photo &copy; <a href="http://www.flickr.com/photos/ejorpin/" target="_blank">Emily Orpin </a>, 
-            <a href="http://creativecommons.org/licenses/by-nc/2.0/legalcode" target="_blank">licence</a></small></em>
-        </p>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <p class="lead">Please visit <a href="https://secure.trailfinders.co.uk/services.nsf/giftlistContribute?readform" target="_blank">trailfinders.com</a>
-                        and use the reference 5BCC3Z</p>
-                    <p>We aim to do something specific with all contributions - from sushi in Tokyo to a night in a traditional ryokan!</p>
-                    <p>If you would like us to do something in particular with your gift please do let us know! In case you need any inspiration, our current itinerary is as follows:</p>
-                    <ul class="list-inline">
-                        <li>Tokyo</li>
-                        <li>-</li>
-                        <li>Hakone</li>
-                        <li>-</li>
-                        <li>Yudanaka</li>
-                        <li>-</li>
-                        <li>Takayama</li>
-                        <li>-</li>
-                        <li>Kyoto</li>
-                        <li>-</li>
-                        <li>Tokyo</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------------------- /Gifts -------------------------------->
-    
-    <!--------------------------- Children ------------------------------->
-    <div id="children">
-        <div class="children">
+    <!-- ------------------------ /Intro ---------------------------- -->
+
+    <!-- -------------------- Thank yous ------------------------ -->
+    <div id="thank-yous">
+
+        <div id="thank-yous-title">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center">
-                        <h1>Children</h1>
-                        <p class="lead">For guests with children, you're very welcome to bring them along to the party. 
-                            Equally, you're welcome to book the babysitter in and have a night to yourselves!</p>
-                        <p>If you can let us know either way when you <a href="#rsvp">RSVP</a> so we have an idea of numbers that 
-                            would be great.</p>
+                        <h1>Thank you!</h1>
+                        <p class="lead">We are so lucky to have such amazing friends and families! Our wedding day was absolutely perfect and we have many people to thank for that.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container marketing">
+
+            <!-- Our wonderful guests -->
+    	    <div class="thank-you">
+    	        <div class="row">
+
+    	            <div class="col-md-6 col-md-push-6">
+                        <p class="text-right"><img class="thank-you-image img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_506/v1408990939/Armstrong-290314-344_fgtvnn.jpg" alt="Our wonderful guests"></p>
+                    </div>
+
+    	            <div class="col-md-6 col-md-pull-6">
+    	                <h2 class="thank-you-heading">Our wonderful guests!</h2>
+                        <p class="lead">Thank you to everyone who came along to celebrate with us.</p>
+    	            </div>
+
+    	        </div>
+            </div>
+
+    	    <hr />
+
+    	    <!-- St. Margret Clitherow's -->
+    	    <div class="thank-you">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p><img class="thank-you-image img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_506/v1408992418/Armstrong-290314-054_evpddo.jpg" alt="St. Margaret Clitherow's"></p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="thank-you-heading text-right">St. Margaret Clitherow's</h2>
+                        <p class="lead text-right">Thank you to all at <a href="http://www.eastleakeandkeyworthrcp.co.uk/" target="_blank">St. Margaret Clitherow's Catholic Church</a> who helped make it such a lovely service.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Flowers -->
+            <div class="thank-you">
+                <div class="row">
+
+                    <div class="col-md-6 col-md-push-6">
+                        <p class="text-right"><img class="thank-you-image img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_506/v1408992846/Armstrong-290314-007_jd8sti.jpg" alt="Flowers"></p>
+                    </div>
+
+                    <div class="col-md-6 col-md-pull-6">
+                        <h2 class="thank-you-heading">Flowers</h2>
+                        <p class="lead">Thank you to Paddy, Jenny and The Flower Group at St. Margaret's who arranged the most beautiful flowers for the church, the venue and the bouquet.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Prestwold Hall -->
+            <div class="thank-you">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p><img class="thank-you-image img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_506/v1408993250/Armstrong-290314-201_oib8ib.jpg" alt="Prestwold Hall"></p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="thank-you-heading text-right">Prestwold Hall</h2>
+                        <p class="lead text-right">Thank you to Nici, Sarah and all at <a href="http://www.prestwold-hall.com/" target="_blank">Prestwold Hall</a> who looked after us so well.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- The Bright Sparks -->
+            <div class="thank-you">
+                <div class="row">
+
+                    <div class="col-md-6 col-md-push-6">
+                        <p class="text-right"><img class="thank-you-image img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_506/v1408993879/Armstrong-290314-336_n8l092.jpg" alt="The Bright Sparks"></p>
+                    </div>
+
+                    <div class="col-md-6 col-md-pull-6">
+                        <h2 class="thank-you-heading">The Bright Sparks</h2>
+                        <p class="lead">Thank you to <a href="http://www.brightsparksliveband.com/" target="_blank">The Bright Sparks</a> for putting on such an amazing show.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Ian Bursill -->
+            <div class="thank-you">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p><img class="thank-you-image img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_506/v1408995197/Armstrong-290314-055_j0mwho.jpg" alt="Ian Bursill Photography"></p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="thank-you-heading text-right">Ian Bursill Photography</h2>
+                        <p class="lead text-right">Thank you to <a href="http://bursill.com/" target="_blank">Ian</a> for taking such brilliant photos and for being so lovely.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- D and M Classics -->
+            <div class="thank-you">
+                <div class="row">
+
+                    <div class="col-md-6 col-md-push-6">
+                        <p class="text-right"><img class="thank-you-image img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_506/v1408995824/Armstrong-290314-178_vtwhjl.jpg" alt="D &amp; M Classics"></p>
+                    </div>
+
+                    <div class="col-md-6 col-md-pull-6">
+                        <h2 class="thank-you-heading">D &amp; M Classics</h2>
+                        <p class="lead">Thank you to <a href="http://www.dandmautos.co.uk/" target="_blank">D &amp; M Classics</a> and our fantastic chauffeur Marilyn.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr />
+
+        </div>
+    </div>
+    <!-- -------------------- /Thank yous ---------------------- -->
+
+    <!-- ------------------------ Photos ------------------------------ -->
+    <div id="photos">
+        <div class="callout">
+
+        </div>
+
+        <div class="photos-info">
+    		<div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2>Photos</h2>
+                        <p class="lead">As promised, below are some of the official photos of the day and some photos from our honeymoon!</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--------------------------- /Children ------------------------------>
-    
-    <!---------------------------- Footer -------------------------------->
-    <div class="footer container text-center">
-        <p>Copyright &copy; Patrick Armstrong 2013
-            <br />(unless otherwise stated)</p>
-        <p>Photos of Patrick and Louise by <a href="http://bursill.com/" target="_blank">Ian Bursill</a></p>
-    </div>
-    <!---------------------------- /Footer ------------------------------->
+    <!-- -------------------------- /Photos ---------------------------- -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- ------------------------ Galleries ---------------------------- -->
+    <div id="galleries" class="container">
+        <h2 class="galleries-title text-center">Our Wedding Day</h2>
+
+        <div class="text-center">
+            <a href='#' id='wedding_day_official_gallery'>
+                <img src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_600/louiseandpatrick.com/wedding-day-official/Armstrong-290314-110.jpg" alt="Wedding Day Official Photos"/>
+                <span class='overlay'><!-- [] --></span>
+            </a>
+        </div>
+
+        <h2 class="galleries-title text-center">Our Honeymoon</h2>
+
+        <div class="row">
+            <div class="col-md-2 col-md-push-2 text-center">
+                <a href='#' id='honeymoon_day1_gallery'>
+                    <img class="img-gallery img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_500/louiseandpatrick.com/honeymoon-day-1/2014-03-31_12_23_03.jpg" alt="Honeymoon Day 1"/>
+                    <span class='overlay'><!-- [] --></span>
+                </a>
+                <h4>Day 1</h4>
+            </div>
+
+            <div class="col-md-2 col-md-push-2 text-center">
+                <a href='#' id='honeymoon_day2_gallery'>
+                    <img class="img-gallery img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_500/v1409091830/louiseandpatrick.com/honeymoon-day-2/IMG_5048.jpg" alt="Honeymoon Day 2"/>
+                    <span class='overlay'><!-- [] --></span>
+                </a>
+                <h4>Day 2</h4>
+            </div>
+
+            <div class="col-md-2 col-md-push-2 text-center">
+                <a href='#' id='honeymoon_day3_gallery'>
+                    <img class="img-gallery img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_500/v1409092179/louiseandpatrick.com/honeymoon-day-3/IMG_8689.jpg" alt="Honeymoon Day 3"/>
+                    <span class='overlay'><!-- [] --></span>
+                </a>
+                <h4>Day 3</h4>
+            </div>
+
+            <div class="col-md-2 col-md-push-2 text-center">
+                <a href='#' id='honeymoon_day4_6_gallery'>
+                    <img class="img-gallery img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_500/v1409092827/louiseandpatrick.com/honeymoon-days-4-6/IMG_8751.jpg" alt="Honeymoon Days 4-6"/>
+                    <span class='overlay'><!-- [] --></span>
+                </a>
+                <h4>Days 4-6</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 col-md-push-2 text-center">
+                <a href='#' id='honeymoon_day7_gallery'>
+                    <img class="img-gallery img-responsive" src="http://res.cloudinary.com/de4f9sf2c/image/upload/c_scale,w_500/louiseandpatrick.com/honeymoon-day-7/IMG_5258.jpg" alt="Honeymoon Day 7"/>
+                    <span class='overlay'><!-- [] --></span>
+                </a>
+                <h4>Day 7</h4>
+            </div>
+        </div>
+
+        <p class="lead text-center">More photos to come!</p>
+
+        <!-- <h2 class="galleries-title text-center">Our Guests' Photos</h2> -->
+
+    </div>
+    <!-- ------------------------ /Galleries ---------------------------- -->
+
+    <!-- -------------------------- Footer ------------------------------ -->
+    <div class="footer container text-center">
+        <p>Copyright &copy; Patrick Armstrong 2014
+    </div>
+    <!-- -------------------------- /Footer ------------------------------ -->
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ site.baseurl }}bootstrap/js/bootstrap.min.js"></script>
-    
+
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
     <script>
         $("#menu-close").click(function(e) {
@@ -444,7 +319,7 @@
     <script>
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
             || location.hostname == this.hostname) {
 
             var target = $(this.hash);
@@ -459,5 +334,18 @@
         });
       });
     </script>
+
+    <!-- Bind the gallery thumbnails to the actual gallery photos -->
+    <script type='text/javascript'>
+        jQuery(document).ready(function($) {
+            bindGallery($, 'wedding_day_official_gallery', wedddingDayOfficialPhotos);
+            bindGallery($, 'honeymoon_day1_gallery', honeymoonDay1Photos);
+            bindGallery($, 'honeymoon_day2_gallery', honeymoonDay2Photos);
+            bindGallery($, 'honeymoon_day3_gallery', honeymoonDay3Photos);
+            bindGallery($, 'honeymoon_day4_6_gallery', honeymoonDay4_6Photos);
+            bindGallery($, 'honeymoon_day7_gallery', honeymoonDay7Photos);
+        });
+    </script>
+
   </body>
 </html>
